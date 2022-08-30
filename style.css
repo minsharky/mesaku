@@ -1,0 +1,116 @@
+body{
+	/*text-align:  center; */
+	background-color:  black;
+	color: white;
+	font-family: Tahoma, sans-serif;
+}
+
+h1{
+	font-size: 100px;
+	text-shadow: 2px 3px black;
+}
+
+
+.divtitle{
+	text-align: center;
+	padding: 10px 0;
+}
+
+p{
+	font-size: 17px;
+}
+
+p.title{
+	font-size: 35px;
+}
+
+.div1{
+	height: 50px;
+	width: 40%;
+	margin-left: auto;
+  margin-right: auto;
+  padding:1%;
+}
+
+.icons{
+	margin-left:2%;
+	float:left; 
+	position: absolute;
+	top: 0px;
+}
+
+.icons2{
+	margin-left:2%;
+	float:left; 
+}
+
+.div2{
+	text-align: center;
+	height: 600px;
+	background-image: url('https://storage.googleapis.com/wzukusers/user-29237124/images/59a1f55e0ff80gxrI9MO/638A9839.JPG');
+	border: 1px solid black;
+	padding: 10px 0;
+}
+
+.div3{
+	margin: auto;
+	width: 40%;
+	padding:1%;
+}
+
+.div4{
+	background-color: grey;
+	position: absolute;
+	width: 100%;
+	bottom: 1;
+}
+
+.footer, .menu{
+	width: 39.5%;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.contact{
+	width: 25%;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-group .button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 15px 28px;
+  text-align: center;
+  font-size: 14px;
+  float: right;
+  border-radius: 6px;
+  transition-duration: 0.6s;
+}
+
+
+.btn-group .here{
+	color: lightgray;
+	background-color:  gray; 
+}
+
+.btn-group, .not:hover{
+	background-color: salmon;
+}
+
+.menubutton{
+	background-color: transparent;
+	color:white;
+	border: 2px solid white;
+	padding: 14px 40px;
+	font-size: 24px;
+	transition-duration: 0.6s;
+	border-radius: 6px;
+}
+
+.menubutton:hover {
+  background-color: white;
+  color: black;
+}
+
