@@ -5,60 +5,6 @@
         <meta charset="UTF-8">
         <title>GALLERY</title>
 
-        <style>
-            .gallery {
-                display: grid;
-                grid-column-gap: 8px;
-                /*grid-row-gap: 200px;*/
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                grid-auto-rows: 100%;
-                width: 50%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .gallery img {
-                max-width: 100%;
-                border-radius: 8px;
-                box-shadow: 0 0 16px #333;
-                transition: all 1.5s ease;
-                width: 100%;
-            }
-
-            .gallery img:hover {
-                box-shadow: 0 0 32px #333;
-
-            }
-
-            .gallery .content {
-                padding: 5px;
-            }
-
-            /*.gallery .gallery-item {
-                transition: grid-row-start 300ms linear;
-                transition: transform 300ms ease;
-                transition: all 0.5s ease;
-                cursor: pointer;
-            }*/
-
-            .gallery .gallery-item:hover {
-                transform: scale(1.025);
-            }
-
-            /*@media (max-width: 600px) {
-                .gallery {
-                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                }
-            }
-
-            @media (max-width: 400px) {
-                .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                }
-            }*/
-
-        </style>
-
     </head>
     <body> 
 
@@ -80,86 +26,44 @@
             <p class = "title">GALLERY</p>
         </div>
 
-        <!-- GALLERY CODE -->
-        <!-- <div class="gallery" >
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,care" alt=""></div>
+        <div class="container">
+            <div class="top">
+                <ul>
+                    <li><a href="#img_1"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/598d39428757am9TrhhB/20770450_460891387610017_815920700526645580_n_d400.jpg"></a></li>
+                    <li><a href="#img_2"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/598d3967570c7qnhWzAN/1502425690365_d400.jpg"></a></li>
+                    <li><a href="#img_3"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/599cf6b415d0aU7KhJ4Z/638A9755_d400.JPG"></a></li>
+                    <li><a href="#img_4"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/599cf6114de16gD5ocr0/638A9768_d1450.JPG"></a></li>
+                    <li><a href="#img_5"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59a1f55e0ff80gxrI9MO/638A9839_d1450.JPG"></a></li>
+                    <li><a href="#img_6"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59a1f59f6aefbZSIPG4o/638A9807_d1450.JPG"></a></li>
+                    <li><a href="#img_7"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59a1f5ed7b1adSMkDmsI/638A9825_d1450.JPG"></a></li>
+                    <li><a href="#img_8"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59bd9d6ca1b0ddNxLFnP/20170912_180226_d1450.jpg"></a></li>
+                    <li><a href="#img_9"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59bd9dc590acedFEfRp0/20170911_185453_d1450.jpg"></a></li>
+                    <li><a href="#img_10"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59bd9e6dd4d420921R2J/20170915_144254.jpg"></a></li>
+                    <li><a href="#img_11"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59dd57cb25e00GL4YZdr/638A9832_d1450.JPG"></a></li>
+                    <li><a href="#img_12"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59dd571aabc0fZj6GXJg/20170924_134331_d1450.jpg"></a></li>
+                    <li><a href="#img_13"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59dd58d956c8a6qqJiRz/638A9928_d1450.JPG"></a></li>
+                    <li><a href="#img_14"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59df9205a5711KKdTxVm/20171003_195911.jpg"></a></li>
+                    <li><a href="#img_15"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59e4d29fbebe1CHAneTW/20171014_180451.jpg"></a></li>
+                    <li><a href="#img_16"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59dd5b43a53dcm9gVgcP/638A9923_d1450.JPG"></a></li>
+                </ul>
+                <a href="#_1" class="lightbox trans" id="img_1"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/598d39428757am9TrhhB/20770450_460891387610017_815920700526645580_n_d400.jpg"></a>
+                <a href="#_2" class="lightbox trans" id="img_2"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/598d3967570c7qnhWzAN/1502425690365_d400.jpg"></a>
+                <a href="#_3" class="lightbox trans" id="img_3"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/599cf6b415d0aU7KhJ4Z/638A9755_d400.JPG"></a>
+                <a href="#_4" class="lightbox trans" id="img_4"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/599cf6114de16gD5ocr0/638A9768_d1450.JPG"></a>
+                <a href="#_5" class="lightbox trans" id="img_5"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59a1f55e0ff80gxrI9MO/638A9839_d1450.JPG"></a>
+                <a href="#_6" class="lightbox trans" id="img_6"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59a1f59f6aefbZSIPG4o/638A9807_d1450.JPG"></a>
+                <a href="#_7" class="lightbox trans" id="img_7"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59a1f5ed7b1adSMkDmsI/638A9825_d1450.JPG"></a>
+                <a href="#_8" class="lightbox trans" id="img_8"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59bd9d6ca1b0ddNxLFnP/20170912_180226_d1450.jpg"></a>
+                <a href="#_9" class="lightbox trans" id="img_9"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59bd9dc590acedFEfRp0/20170911_185453_d1450.jpg"></a>
+                <a href="#_10" class="lightbox trans" id="img_10"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59bd9e6dd4d420921R2J/20170915_144254.jpg"></a>
+                <a href="#_11" class="lightbox trans" id="img_11"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59dd57cb25e00GL4YZdr/638A9832_d1450.JPG"></a>
+                <a href="#_12" class="lightbox trans" id="img_12"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59dd571aabc0fZj6GXJg/20170924_134331_d1450.jpg"></a>
+                <a href="#_9" class="lightbox trans" id="img_13"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59dd58d956c8a6qqJiRz/638A9928_d1450.JPG"></a>
+                <a href="#_10" class="lightbox trans" id="img_14"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59df9205a5711KKdTxVm/20171003_195911.jpg"></a>
+                <a href="#_11" class="lightbox trans" id="img_15"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59e4d29fbebe1CHAneTW/20171014_180451.jpg"></a>
+                <a href="#_12" class="lightbox trans" id="img_16"><img src="https://www.mesaku.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-29237124/images/59dd5b43a53dcm9gVgcP/638A9923_d1450.JPG"></a>
+            </div>
         </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,studied" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,substance" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,choose" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,past" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,lamp" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,yet" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,eight" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,crew" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,event" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,instrument" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,practical" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,pass" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bigger" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,number" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,feature" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,line" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,railroad" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,pride" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,too" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bottle" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,base" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,cell" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bag" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,card" alt=""></div>
-        </div>
-    </div> -->
-
-        <!-- GALLERY CODE -->
 
 
         <div class = "div4">
